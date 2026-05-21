@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+
+        <nav class="container navegacao">
+            <div class="logo">
+            EcoPlay
+            </div>
+
+        <button class="botao-menu">☰</button>
+
+        <ul class="menu">
+        <li>
+                    <a href="#destaque">Inicio</a>
+        </li>
+                <li>
+                    <a href="#recursos">Recursos</a>
+                </li>
+                <li>
+                    <a href="#sobre">sobre</a>
+                </li>
+                <li>
+                    <a href="#sobre">Fale Conosco</a>
+                 </li>
+                 <li>
+                    <a href="#sobre">Contrate Agora</a>
+                </li>  
+                    
+            </ul>
+        </nav>
+    </header>
+
+    <section class="destaque" id="destaque">
+
+        <div class="container">
+            <div class="texto">
+                <h1>Tecnologia Sustentável</h1>
+                <p>Produtos que combinam inovação com responsabilidade ambiental, reduzindo impacto sem comprometer
+                    qualidade.
+                </p>
+                <a href="#" class="botao">Explorar</a>
+            </div>
+
+            <div>
+                <div class="imagem">
+                    <img src="./imagem.png.jpeg" alt="Imagem de destaque">
+                        
+                </div>
+            </div>
+    </section>
+    <section class="recursos" id="recursos">
+        <h2>Nossos Diferenciais</h2>
+
+        <div class="container">
+
+            <div class="card">
+                <div class="icone">♻️</div>
+                <h3>Materiais Sustentáveis</h3>
+                <p>Componentes reciclados e biodegradaveis que reduzem o impacto ambiental.</p>
+            </div>
+
+            <div class="card">
+                <div class="icone">⚡</div>
+                <h3>Eficiência Energética</h3>
+                <p>Dispositivos que consomem menos energia e têm maior vida útil.</p>
+            </div>
+
+            <div class="card">
+                <div class="icone">🌱</div>
+                <h3>Programa de Reciclagem</h3>
+                <p>logística reversa para reciclagem adequadas de dispositivos antigos.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="cta">
+        <h2>Pronto para fazer a diferença?</h2>
+        <p>Junte-se a quem já escolheu tecnologia consciente para o futuro do planeta.<p>
+            <a href="#" class="botao">Comprar agora</a>
+    </section>
+
+    <footer>
+        Direitos reservados EcoPlay-2026
+    </footer>
+
+
+</body>
+<script>
+    let botao = document.querySelector('.botao-menu')
+    let menu = document.querySelector('.menu')
+
+    botao.addEventListener('click', () => {
+        menu.classList.toggle('ativo')
+    })
+
+</script>
+
+</html>
